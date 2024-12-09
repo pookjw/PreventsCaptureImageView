@@ -12,12 +12,27 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="PreventsCaptureImageView">
+                    <view key="view" contentMode="scaleToFill" id="0rb-8E-zh6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aty-Fq-PQ1" customClass="PreventsCaptureImageView">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RdW-bF-3XY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="aty-Fq-PQ1" firstAttribute="top" secondItem="RdW-bF-3XY" secondAttribute="top" id="K9U-mv-6NC"/>
+                            <constraint firstItem="RdW-bF-3XY" firstAttribute="trailing" secondItem="aty-Fq-PQ1" secondAttribute="trailing" id="VKU-Fn-wFn"/>
+                            <constraint firstItem="aty-Fq-PQ1" firstAttribute="leading" secondItem="RdW-bF-3XY" secondAttribute="leading" id="YCV-6i-6Rw"/>
+                            <constraint firstItem="RdW-bF-3XY" firstAttribute="bottom" secondItem="aty-Fq-PQ1" secondAttribute="bottom" id="nXT-hB-D4W"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="aty-Fq-PQ1" id="Q2D-nv-zaz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -25,8 +40,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

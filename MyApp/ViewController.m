@@ -9,6 +9,7 @@
 #import "PreventsCaptureImageView.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet PreventsCaptureImageView *imageView;
 
 @end
 
@@ -21,7 +22,7 @@
 //            ((PreventsCaptureImageView *)self.view).image = image;
 //        });
 //    }];
-    ((PreventsCaptureImageView *)self.view).image = [UIImage imageNamed:@"1"];
+    self.imageView.image = [UIImage imageNamed:@"1"];
 }
 
 
